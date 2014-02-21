@@ -25,8 +25,8 @@ public class pCombat extends JavaPlugin implements Listener {
 		    Player p = event.getPlayer();
 		    if (this.antilog.contains(p.getName())) {
 		      Bukkit.getServer().broadcastMessage(ChatColor.GRAY + p.getName() + " has combat logged and a villager has been spawned!");
-		      p.damage(21.0);
-		         Bukkit.getServer().getWorld("world").spawnEntity(p.getLocation(), EntityType.VILLAGER);
+		      p.damage(20.0);
+		      Bukkit.getServer().getWorld("world").spawnEntity(p.getLocation(), EntityType.VILLAGER);
 
 		    }
 		  }
