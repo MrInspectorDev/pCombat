@@ -43,8 +43,8 @@ public class pCombat extends JavaPlugin implements Listener {
 	        (!this.antilog.contains(target.getName()))) {
 	        this.antilog.add(player.getName());
 	        this.antilog.add(target.getName());
-	        player.sendMessage(ChatColor.GOLD + "You're now in " + ChatColor.UNDERLINE + "Combat!");
-	        target.sendMessage(ChatColor.GOLD + "You're now in " + ChatColor.UNDERLINE + "Combat!");
+	        player.sendMessage(ChatColor.GOLD + "You're now in Combat!");
+	        target.sendMessage(ChatColor.GOLD + "You're now in Combat!");
 	        Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
 	          public void run() {
 	            if ((antilog.contains(player.getName())) && 
